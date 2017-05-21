@@ -5,7 +5,7 @@
  */
 var faker = require('faker')
 
-exports.handler = function(event, context) {
+exports.handler = function(event, context, callback) {
   var career = {}
   career.firstName = event.firstName
   career.lastName = event.lastName
@@ -25,10 +25,11 @@ exports.handler = function(event, context) {
 
   career.endorsements = []
   for (var i = 0; i < 20; i++) {
+    console.log(career.endorsements)
     career.endorsements.push(getEndorsement())
   }
 
-  context.succeed(career)
+  callback(null, 'handler callback success')
 }
 
 function getSocialMediaName() {

@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "faker.js",
+  "entry": "index.js",
   "dependencies": {
-    "faker": "^4.1.0"
+    "faker": "^4.1.0",
+    "node-lambda": "^0.10.0"
   },
   "devDependencies": {},
   "scripts": {
