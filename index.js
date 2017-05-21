@@ -25,7 +25,6 @@ exports.handler = function(event, context, callback) {
 
   career.endorsements = []
   for (var i = 0; i < 20; i++) {
-    console.log(career.endorsements)
     career.endorsements.push(getEndorsement())
   }
 

@@ -1,25 +1,30 @@
 {
   "name": "serverless-playground",
   "version": "1.0.0",
-  "description": "",
+  "description": "node lambda serverless function playground",
+  "author": "nsarafa",
+  "license": "MIT",
   "main": "faker.js",
   "entry": "index.js",
-  "dependencies": {
-    "faker": "^4.1.0",
-    "node-lambda": "^0.10.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nsarafa/serverless-playground.git"
   },
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/nsarafa/serverless-playground/issues"
   },
-  "homepage": "https://github.com/nsarafa/serverless-playground#readme"
+  "homepage": "https://github.com/nsarafa/serverless-playground#readme",
+  "scripts": {
+    "deploy": "node-lambda deploy",
+    "package": "node-lambda package",
+    "execute": "node-lambda run",
+    "setup": "node-lambda setup",
+    "run": "node-lambda run",
+    "test": "node-lambda run",
+    "zip": "node-lambda package"
+  },
+  "dependencies": {
+    "faker": "^4.1.0",
+    "node-lambda": "^0.10.0"
+  }
 }
